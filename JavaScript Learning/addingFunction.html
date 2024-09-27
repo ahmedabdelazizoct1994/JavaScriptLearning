@@ -1,0 +1,54 @@
+<html>
+<head>Calculator</head>
+<body>
+<input id="value1"/>
+<input id="value2"/>
+<br>
+<button id="addButton">Add</button>
+<button id="MultiplyButton">Multiply</button>
+<button id="minusButton">Minus</button>
+<button id="divisonButton">Divide</button>
+<p id="addingResult">    </p>
+<p id="multiplyResult">   </p>
+<p id="MinusResult">          </p>
+<p id="divisonResult">     </p>
+</body>
+<script>
+
+    document.getElementById("addButton").onclick=add2Numbers;
+    function add2Numbers()
+    {
+    let a=document.getElementById("value1").value;
+    let b=document.getElementById("value2").value;
+    let result=parseInt(a)+parseInt(b);
+    document.getElementById("addingResult").innerHTML=result;
+    }
+
+      document.getElementById("MultiplyButton").onclick=Multiply2Numbers;
+    function Multiply2Numbers()
+    {
+    let a=document.getElementById("value1").value;
+    let b=document.getElementById("value2").value;
+    let result=parseInt(a)*parseInt(b);
+    document.getElementById("multiplyResult").innerHTML=result;
+    }
+
+        document.getElementById("minusButton").onclick=Minus2Numbers;
+    function Minus2Numbers()
+    {
+    let a=document.getElementById("value1").value;
+    let b=document.getElementById("value2").value;
+    let result=parseInt(a)-parseInt(b);
+    document.getElementById("MinusResult").innerHTML=result;
+    }
+    document.getElementById("divisonButton").onclick=Division2Numbers;
+    function Division2Numbers()
+    {
+    let a=document.getElementById("value1").value;
+    let b=document.getElementById("value2").value;
+    let result=parseInt(a)/parseInt(b);
+    document.getElementById("divisonResult").innerHTML=result;
+    }
+    
+    </script>
+</html>
